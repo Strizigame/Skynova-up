@@ -1,0 +1,117 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> SkyNova Project </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="{{ url_for('static', filename='images/DroneIcon.png') }}">			
+		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/mainE.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<header id="header">
+				<h1 id="logo"><a href="/indexPL">SkyNova</a></h1>
+				<nav id="nav">
+					<ul>						
+						<li class="hov"><a>Działanie strony</a>
+							<ul>
+								<li><a href="/informationPL">Informacje</a></li>
+								<li><a href="/hiwPL">Jak to działa?</a></li>
+								<li><a href="/modelsPL">Modele</a></li>
+							</ul>
+						<li class="hov"><a>Dowiedz się więcej</a>
+							<ul>
+								<li><a href="/benefitsPL">Korzyści</a></li>
+								<li><a href="/contactsPL">Kontakt</a></li>
+							</ul>
+						</li>
+						<li class="hov"><a>Język</a>
+							<ul>
+								<li><a href="/software"><img src="{{ url_for('static', filename='images/country_flag/union-jack-1027898_640.png') }}" class="photos"alt="flag1"> Angielski</a></li>
+								<li><a href="/softwareES"><img src="{{ url_for('static', filename='images/country_flag/spain-28530_640.png') }}" class="photos"alt="flag2"> Hiszpański</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</p>
+			</header>
+		
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Software</h2>
+							<p>Jak to wygląda od strony Back-Endu?</p>
+						</header>
+						
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+			<section id="one" class="spotlight style1 bottom">
+					
+				<span class="image fit main"><img src="{{ url_for('static', filename='images/kod.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="soft">
+								
+								<div class="col-4 col-12-medium">
+									<h2>Struktura serwera</h2>
+									<p>Serwer został zaimplementowany na mikrokomputerze lub mikrokontrolerze, dając możliwość korzystania z platform takich jak Raspberry Pi, Arduino lub innych urządzeń kompatybilnych z projektem Socket.IO. Struktura serwera jest oparta na pliku serwer.py, stanowiącym centralne ogniwo połączone z bazą danych. W analogiczny sposób, plik client.py, będący aplikacją Flask, również integrującą się z bazą danych, kreuje dedykowaną stronę klienta za pomocą aplikacji Flask i mechanizmu szablonów. Proces generowania strony klienta umożliwia klientowi przeglądanie jej poprzez udostępnienie lokalnego serwera z wykorzystaniem aplikacji ngrok.</p>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<a href="#two" class="goto-next scrolly">Next</a>
+			</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{{ url_for('static', filename='images/kod.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="soft">
+								
+								<div class="col-4 col-12-medium">
+									<h2>Select</h2>
+									<p>Na interfejsie klienta dostępny jest element select, umożliwiający wybór komend przekazywanych z bazy danych w celu zapewnienia hermetyzacji i zwiększenia bezpieczeństwa. Po uwierzytelnieniu użytkownik przekazuje komendy do klienta. Aby komendy zostały przesłane z klienta na serwer, konieczne jest zalogowanie się poprzez podanie loginu i hasła. Serwer przetwarza te komendy, wykorzystując dane z odczytu połączonych sensorów i urządzeń pomiarowych. Następnie wyniki są przesyłane z powrotem do pliku serwer.py, a stamtąd do client.py. W rezultacie, client.py przesyła ostateczne wyniki na stronę. Cała ta sekwencja operacji bazuje na technologii Socket.IO, umożliwiającej komunikację w czasie rzeczywistym pomiędzy klientem a serwerem. Ponadto, na poziomie klienta działa równoległy serwer.</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+						
+				</section>
+
+				<!-- Three -->
+				
+			<!-- Four -->
+				
+				
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; SkyNova. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.dropotron.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

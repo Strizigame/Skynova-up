@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> SkyNova Project </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="{{ url_for('static', filename='images/DroneIcon.png') }}">			
+		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/mainE.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<header id="header">
+				<h1 id="logo"><a href="/index">SkyNova</a></h1>
+				<nav id="nav">
+					<ul>						
+						<li class="hov"><a>How It Works</a>
+							<ul>
+								<li><a href="/information">Informations</a></li>
+								<li><a href="/hiw">Running the Script</a></li>
+								<li><a href="/models">Models</a></li>
+							</ul>
+						<li class="hov"><a>Learn More</a>
+							<ul>
+								<li><a href="/benefits">Benefits</a></li>
+								<li><a href="/contacts">Contacts</a></li>
+							</ul>
+						</li>
+						<li class="hov"><a>Language</a>
+							<ul>
+								<li><a href="/softwarePL"><img src="{{ url_for('static', filename='images/country_flag/poland-26125_640.png') }}" class="photos" alt="flag"> Polish</a></li>
+								<li><a href="/softwareES"><img src="{{ url_for('static', filename='images/country_flag/spain-28530_640.png') }}" class="photos"alt="flag2"> Spanish</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</p>
+			</header>
+		
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Software</h2>
+							<p>How does it look from the back side?</p>
+						</header>
+						
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+			<section id="one" class="spotlight style1 bottom">
+					
+				<span class="image fit main"><img src="{{ url_for('static', filename='images/kod.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="soft">
+								
+								<div class="col-4 col-12-medium">
+									<h2>Server structure</h2>
+									<p>The server has been implemented on a microcomputer or microcontroller, 
+										giving the ability to use platforms such as Raspberry Pi, Arduino or other devices 
+										compatible with the Socket. IO project. The structure of the server is based on the server. 
+										py file, which is the central link connected to the database. Similarly, client. py, a Flask 
+										application that also integrates with the database, creates a dedicated client page using Flask 
+										and the template engine. The process of generating a client page allows the client to view it 
+										by sharing a local server using the ngrok application.</p>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<a href="#two" class="goto-next scrolly">Next</a>
+			</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{{ url_for('static', filename='images/kod.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="soft">
+								
+								<div class="col-4 col-12-medium">
+									<h2>Select</h2>
+									<p>A select element is available on the client interface, allowing you to select commands passed from the database for 
+										encapsulation and increased security. After authentication, the user passes commands to the client. In order for commands 
+										to be sent from the client to the server, it is necessary to log in by entering a login and password. The server processes these 
+										commands using data from the readings of the connected sensors and measuring devices. Then the results are sent back to server. py, 
+										and from there to client. py. As a result, client. py sends the final results to the page. This sequence of operations is based on Socket. 
+										IO technology, which enables real-time communication between the client and the server.
+										 In addition, there is a parallel server at the client level.</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+						
+				</section>
+
+				<!-- Three -->
+				
+			<!-- Four -->
+				
+				
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; SkyNova. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.dropotron.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

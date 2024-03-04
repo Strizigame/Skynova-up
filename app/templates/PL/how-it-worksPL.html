@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> SkyNova Project </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="{{ url_for('static', filename='images/DroneIcon.png') }}">			
+		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/mainC.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<header id="header">
+				<h1 id="logo"><a href="/indexPL">SkyNova</a></h1>
+				<nav id="nav">
+					<ul>						
+						<li class="hov"><a>Działanie strony</a>
+							<ul>
+								<li><a href="/informationPL">Informacje</a></li>
+								<li><a href="/modelsPL">Modele</a></li>
+								<li><a href="/softwarePL">Oprogramowanie</a></li>
+							</ul>
+						<li class="hov"><a>Dowiedz się więcej</a>
+							<ul>
+								<li><a href="/benefitsPL">Korzyści</a></li>
+								<li><a href="/contactsPL">Kontakt</a></li>
+							</ul>
+						</li>
+						<li class="hov"><a>Języki</a>
+							<ul>
+							
+								<li><a href="/hiw"><img src="{{ url_for('static', filename='images/country_flag/union-jack-1027898_640.png') }}" class="photos"alt="flag1"> Angielski</a></li>
+								<li><a href="/hiwES"><img src="{{ url_for('static', filename='images/country_flag/spain-28530_640.png') }}" class="photos"alt="flag2"> Hiszpański</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2> Jak to działa?</h2>
+							<p> Zajrzyjmy do wnętrza aplikacji </p>
+						
+						</header>
+						
+					</div>
+					<a href="#one" class="goto-next scrolly">Następny</a>
+				</section>
+
+			<!-- One -->
+			<section id="one" class="spotlight style1 bottom">
+					
+				<span class="image fit main"><img src="{{ url_for('static', filename='images/drone-4638280_1280.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-medium">
+								<header>
+									<h2>Działanie projektu</h2>	</header>
+									<p>Po otrzymaniu polecenia od uprawnionego użytkownika, wiadomość zostanie przesłana do bazy drona, gdzie zostanie zrealizowana. Przykładowe zadania obejmują otwieranie drzwi lub sprawdzanie poziomu naładowania baterii drona. Warto zaznaczyć, że cały hangar jest zasilany energią słoneczną, co zapewnia ciągłą operacyjność zarówno w dzień, jak i w nocy.
+										</p>
+								
+							</div>
+							<div class="col-4 col-12-medium">
+								<h2>Wymagania dla Hali Dronów</h2>
+								<p>
+                                     Istotne jest znalezienie odpowiedniego miejsca, które musi pomieścić kilka dronów i być dobrze oświetlone, aby wykorzystać energię z paneli słonecznych.
+                                    Innym istotnym aspektem jest sam serwer, który wymaga mikrokomputera dla optymalnego funkcjonowania.
+                                    Do samego wysyłania będzie niezbędne zalogowanie się przez użytkownika.
+                                    
+									</p>
+							</div>
+							<div class="col-4 col-12-medium">
+							
+                                <h2>Aby stworzyć taką bazę, niezbędne są różnorodne materiały, takie jak:</h2>
+								<p>
+									<ul>
+									<li>Beton</li>
+									<li>  Polimery węglowe</li>
+									<li> Belki stalowe</li>
+									<li> Koła zębate</li>
+									<li>  Włókna węglowe termoplastyczne</li>
+									<li>Panele słoneczne</li>
+									</ul></p>
+							</div>
+						</div>                                            
+					</div>
+				</div>
+				<a href="#two" class="goto-next scrolly">Następny</a>
+			</section>
+				
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; SkyNova. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.dropotron.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

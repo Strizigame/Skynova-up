@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> SkyNova Project </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="{{ url_for('static', filename='images/DroneIcon.png') }}">			
+		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/mainC.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<header id="header">
+				<h1 id="logo"><a href="/index">SkyNova</a></h1>
+				<nav id="nav">
+					<ul>						
+						<li class="hov"><a>How It Works</a>
+							<ul>
+								<li><a href="/information">Informations</a></li>
+								<li><a href="/models">Models</a></li>
+								<li><a href="/software">The Software</a></li>
+							</ul>
+						<li class="hov"><a>Learn More</a>
+							<ul>
+								<li><a href="/benefits">Benefits</a></li>
+								<li><a href="/contacts">Contacts</a></li>
+							</ul>
+						</li>
+						<li class="hov"><a>Language</a>
+							<ul>
+								<li><a href="/hiwPL"><img src="{{ url_for('static', filename='images/country_flag/poland-26125_640.png') }}" class="photos" alt="flag"> Polish</a></li>
+								<li><a href="/hiwES"><img src="{{ url_for('static', filename='images/country_flag/spain-28530_640.png') }}" class="photos"alt="flag2"> Spanish</a></li>
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</header>
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2> How it works? </h2>
+							<p>Let's take a look on how it works</p>
+						</header>
+						
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+			<section id="one" class="spotlight style1 bottom">
+					
+				<span class="image fit main"><img src="{{ url_for('static', filename='images/drone-4638280_1280.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="col-4 col-12-medium">
+								<header>
+									<h2>How it works?</h2>	</header>
+									<p>Upon the selection of a command by an approved user, the complete message will be transmitted to the drone base, where it will undergo execution. Examples of such commands may include tasks such as opening doors or inspecting the drone's battery level. It is noteworthy that the entire hangar is sustainably powered by solar energy, ensuring uninterrupted operations throughout both day and night.
+										</p>
+								
+							</div>
+							<div class="col-4 col-12-medium">
+								<h2>Requirements for the Drone Hangar:</h2>
+								<p>
+									Additionally, finding a suitable location is essential; it must accommodate several drones and be well-lit to harness energy from solar panels. Another critical aspect is the server itself, which requires a microcomputer for optimal functionality.
+								</p>
+							</div>
+							<div class="col-4 col-12-medium">
+
+								
+										<h2>To construct such a hangar, various materials are necessary, including:</h2>
+										<p>	<ul>
+										<li>Concrete</li>
+										<li> Carbon polymers</li>
+										<li> Steel beams</li>
+										<li> Gears</li>
+										<li> Thermoplastic carbon fiber</li>
+										<li> solar panels</li>
+										</ul>
+									</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<a href="#two" class="goto-next scrolly">Next</a>
+			</section>
+				
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; SkyNova. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.dropotron.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

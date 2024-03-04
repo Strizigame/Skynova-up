@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> SkyNova Project </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="{{ url_for('static', filename='images/DroneIcon.png') }}">			
+		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/mainE.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<header id="header">
+				<h1 id="logo"><a href="/indexES">SkyNova</a></h1>
+				<nav id="nav">
+					<ul>						
+						<li class="hov"><a>Cómo Funciona</a>
+							<ul>
+								<li><a href="/informationES">Informaciones</a></li>
+								<li><a href="/hiwES">Ejecutando el script</a></li>
+								<li><a href="/modelsES">Modelos</a></li>
+							</ul>
+						<li class="hov"><a>Saber más</a>
+							<ul>
+								<li><a href="/benefitsES">Prestaciones</a></li>
+								<li><a href="/contactsES">Contactos</a></li>
+							</ul>
+						</li>
+						<li class="hov"><a>Idioma</a>
+							<ul>
+								<li><a href="/softwarePL"><img src="{{ url_for('static', filename='images/country_flag/poland-26125_640.png') }}" class="photos" alt="flag"> Polaco</a></li>
+								<li><a href="/software"><img src="{{ url_for('static', filename='images/country_flag/union-jack-1027898_640.png') }}" class="photos"alt="flag1"> Inglés</a></li>
+								
+							</ul>
+						</li>
+					</ul>
+				</nav>
+			</p>
+			</header>
+		
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>Software</h2>
+							<p>¿Cómo se ve desde atrás?</p>
+						</header>
+						
+					</div>
+					<a href="#one" class="goto-next scrolly">Next</a>
+				</section>
+
+			<!-- One -->
+			<section id="one" class="spotlight style1 bottom">
+					
+				<span class="image fit main"><img src="{{ url_for('static', filename='images/kod.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="soft">
+								
+								<div class="col-4 col-12-medium">
+									<h2>Estructura del servidor</h2>
+									<p>El servidor se ha implementado en un microordenador o microcontrolador, dando la posibilidad de utilizar plataformas como Raspberry Pi, Arduino u otros dispositivos compatibles con el Socket. Proyecto IO. La estructura del servidor se basa en el archivo server. py, que es el enlace central conectado a la base de datos. Del mismo modo, client. py, una aplicación de Flask que también se integra con la base de datos, crea una página cliente dedicada usando Flask y el motor de plantillas. El proceso de generar una página cliente permite al cliente verla compartiendo un servidor local usando la aplicación ngrok.</p>
+								</div>
+								
+							</div>
+							
+						</div>
+					</div>
+				</div>
+				<a href="#two" class="goto-next scrolly">Next</a>
+			</section>
+
+			<!-- Two -->
+				<section id="two" class="spotlight style1 bottom">
+					<span class="image fit main"><img src="{{ url_for('static', filename='images/kod.jpg') }}" alt="" /></span>
+				<div class="content">
+					<div class="container">
+						<div class="row">
+							<div class="soft">
+								
+								<div class="col-4 col-12-medium">
+									<h2>Seleccionar</h2>
+									<p>Un elemento select está disponible en la interfaz del cliente, que le permite seleccionar comandos pasados desde la base de datos para encapsular y aumentar la seguridad. Después de la autenticación, el usuario pasa comandos al cliente. Para que los comandos se envíen desde el cliente al servidor, es necesario iniciar sesión introduciendo un nombre de usuario y una contraseña. El servidor procesa estos comandos utilizando datos de las lecturas de los sensores y dispositivos de medición conectados. Entonces los resultados se envían de vuelta a server. py, y desde allí a client. py. Como resultado, client. py envía los resultados finales a la página. Esta secuencia de operaciones se basa en Socket. Tecnología IO, que permite la comunicación en tiempo real entre el cliente y el servidor. Además, hay un servidor paralelo a nivel de cliente.</p>
+								</div>
+								
+							</div>
+						</div>
+					</div>
+				</div>
+						
+				</section>
+
+				<!-- Three -->
+				
+			<!-- Four -->
+				
+				
+			<!-- Footer -->
+				<footer id="footer">
+					<ul class="copyright">
+						<li>&copy; SkyNova. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.dropotron.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+	</body>
+</html>

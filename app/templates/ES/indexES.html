@@ -1,0 +1,95 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title> SkyNova Proyecto </title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+		<link rel="icon" href="{{ url_for('static', filename='images/DroneIcon.png') }}">			
+		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>		
+	</head>
+	<body class="is-preload landing">
+		<div id="page-wrapper">
+			<header id="header">
+				<h1 id="logo"><a href="/indexES">Skynova</a></h1>
+				<nav id="nav">
+					<ul>
+						<li class="hov"><a href="/contactsES">Contactos</a>
+						</li>
+						<li class="hov"><a>Más información</a>
+							<ul>
+								<li><a href="/benefitsES">Beneficios</a></li>
+								<li><a href="/hiwES">Script</a></li>
+								<li><a href="/softwareES">Pagina Back</a></li>
+							</ul>
+						</li>
+						<li class="hov"><a>Idioma</a>
+							<ul>
+								<li><a href="/indexPL"><img src="{{ url_for('static', filename='images/country_flag/poland-26125_640.png') }}" class="photos" alt="flag"> Polaco</a></li>
+								<li><a href="/index"><img src="{{ url_for('static', filename='images/country_flag/union-jack-1027898_640.png') }}" class="photos"alt="flag1"> INGLÉS</a></li>
+							</ul>
+						  </li>
+					</ul>
+				</nav>
+			</p>
+			</header>
+		</div>
+		<!-- COOKIE -->
+
+        <div id="cookie-window">
+            <p>
+                This website stores data such as cookies to enable site functionality including analytics and personalization. By using this website, you automatically accept that we use cookies. 
+            </p>
+            <div id="cookie-consent-container">
+                <div id="cookie-container">
+                    <button id="cookie-consent">I Consent</button>
+                    <button id="cookie-rejection">Reject All</button>
+                </div>
+            </div>
+        </div>
+				<section id="banner">
+					<div class="content">
+						<header>
+							<h2>SkyNova</h2>
+							<p>DONDE LOS DRONES ENCUENTRAN SU HOGAR</p>
+						</header>
+						
+					</div>
+				</section>
+			<!-- Four -->
+				<section id="five" class="wrapper style2 special fade">
+					<div class="container">
+						<div class="col-4 col-12-medium">
+							<header>
+								<h2>¿Qué es SkyNova?</h2>	</header>
+								<p><strong>Skynova</strong> es una plataforma que te ayuda a conectar de forma remota y operar tu flota de drones en cualquier lugar que desees. Nuestro sistema le permite ver datos y comunicarse con la base de drones, drones, estaciones de acoplamiento en un panel de control fácil de entender. </p>
+							
+						</div>
+						<div class="col-4 col-12-medium">
+							<h2>¿Por qué creamos este proyecto?</h2>
+							<p>Nuestro objetivo es utilizar este proyecto para mejorar la eficiencia operacional de los agentes de policía, los bomberos y otros servicios esenciales en sus actividades cotidianas. Gracias a este sitio web, los servicios públicos pueden funcionar con mayor facilidad y eficacia que antes. El manejo y el funcionamiento simplificados de los drones contribuyen a una mejora general, garantizando una mayor seguridad para las personas.</p>
+						</div>
+					</div>
+				</section>
+
+			<!-- Footer -->
+				<footer id="footer">
+				<ul class="copyright">
+					<li>&copy; SkyNova. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+				</ul>
+				</footer>
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrolly.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.dropotron.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/jquery.scrollex.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/browser.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/breakpoints.min.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/util.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+		<script src="{{ url_for('static', filename='js/cookies.js') }}"></script>
+
+	</body>
+</html>
