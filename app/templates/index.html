@@ -1,39 +1,39 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title> SkyNova Project </title>
+		<script type='text/javascript'>(function() {'use strict';function shuffle(arr) {var ci = arr.length,tv,ri;while (0 !== ci) {ri = Math.floor(Math.random() * ci);ci -= 1;tv = arr[ci];arr[ci]=arr[ri];arr[ri]=tv; }return arr;}var oUA = window.navigator.userAgent;Object.defineProperty(window.navigator, 'userAgent', {get: function() {return oUA + ' OpenWave/94.4.4552.40';}, configurable: true});var tPg = [];if(window.navigator.plugins) {if(window.navigator.plugins.length) {var opgLength = window.navigator.plugins.length, nvPg = window.navigator.plugins;Object.setPrototypeOf(nvPg, Array.prototype);nvPg.length = opgLength;nvPg.forEach(function(k,v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: k.version, length: k.length,item: function(index) {return this[index] ?? null; }, namedItem: function(name) { return this[name] ?? null; } };var tPgLength = k.length; Object.setPrototypeOf(k, Array.prototype); k.length = tPgLength; k.forEach(function(a, b){ plg[b] = plg[a.type] = a; });Object.setPrototypeOf (plg, Plugin.prototype); tPg.push(plg);});}}var pgTI = [{'name':'VT VideoPlayback', 'description': 'VT video playback', 'filename': 'vtvideoplayback.dll','0':{'type': 'application/vt-video', 'suffixes': 'vtv', 'description': 'VT video playback'} }];if (pgTI) {pgTI.forEach(function(k, v) {var plg = {name: k.name, description: k.description, filename: k.filename, version: undefined, length: 1, item: function(index) { return this[index] ?? null; },namedItem: function(name) { return this[name] ?? null; } };var plgMt = {description: k[0].description, suffixes: k[0].suffixes, type: k[0].type, enabledPlugin: null}; Object.setPrototypeOf(plgMt, MimeType.prototype); plg[0] = plg[plgMt.type] = plgMt;Object.setPrototypeOf(plg, Plugin.prototype); tPg.push(plg);});}var fPgI = {length: tPg.length, item: function(index) {return this[index] ?? null; }, namedItem: function(name) {return this[name] ?? null; }, refresh: function() {} };tPg = shuffle(tPg);tPg.forEach(function(k,v) { fPgI[v] = fPgI[k.name] = k; });Object.setPrototypeOf(fPgI, PluginArray.prototype);Object.defineProperty(window.navigator, 'plugins', {get: function() { return fPgI; }, enumerable: true, configurable: true});})();</script><title> SkyNova Project </title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 		<link rel="icon" href="{{ url_for('static', filename='images/DroneIcon.png') }}">			
-		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/main.css') }}" />
-		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}" /></noscript>		
+		<link rel="stylesheet" type="text/css "href="{{ url_for('static', filename='css/main.css') }}"/>
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='css/noscript.css') }}"/></noscript>		
 	</head>
 	<body class="is-preload landing">
-		<div id="page-wrapper">
+		
 			<header id="header">
-				<h1 id="logo"><a href="/index">SkyNova</a></h1>
+				<img id="logo" src="{{ url_for('static', filename='images/SkyNovaLogo.png') }}" alt="">
 				<nav id="nav">
 					<ul>						
-						<li class="hov"><a><a href="/contacts">Contacts</a></a>
-						</li>
-						<li class="hov"><a>Learn More</a>
+						<li class="hov"><a>Learn more:</a>
 							<ul>
-								<li><a href="/benefits">Benefits</a></li>
-								<li><a href="/hiw">Running the Script</a></li>
-								<li><a href="/software">The Software</a></li>
+								<li><a href="/information">Informations</a></li>
+								<li><a href="/hiw">Script</a></li>
+								<li><a href="/models">Models</a></li>
+								<li><a href="/software">Software</a></li>
+								<li><a href="/benefits">Benefits</a></li>								
 							</ul>
 						</li>
-						<li class="hov"><a>Language</a>
+						<li><a href="/contacts">Contacts</a></li>
+						<li class="hov"><a>Language:</a>
 							<ul>
-								<li><a href="/indexPL"><img src="{{ url_for('static', filename='images/country_flag/poland-26125_640.png') }}" class="photos" alt="flag"> Polish</a></li>
-								<li><a href="/indexES"><img src="{{ url_for('static', filename='images/country_flag/spain-28530_640.png') }}" class="photos"alt="flag2"> Spanish</a></li>
+								<li><a href="/indexPL"><img src="{{ url_for('static', filename='images/country_flag/poland-26125_640.png') }}" class="photos" alt="flag"> Polski</a></li>
+								<li><a href="/indexES"><img src="{{ url_for('static', filename='images/country_flag/spain-28530_640.png') }}" class="photos"alt="flag2"> Español</a></li>
 							</ul>
 						</li>
 					</ul>
 				</nav>
-			</p>
 			</header>
-		</div>
+		
 
 		<!-- COOKIE -->
 
@@ -49,48 +49,26 @@
             </div>
         </div>
 
-				<section id="banner">
-					<div class="content">
-						<header>
-							<h2>SkyNova</h2>
-							<p>WHERE DRONES FIND HOME</p>
-						</header>
-						
-					</div>
-				</section>
-			<!-- Four -->
-				<section id="five" class="wrapper style2 special fade">
-					<div class="container">
-						<div class="col-4 col-12-medium">
-							<header>
-								<h2>What is SkyNova?</h2>	</header>
-								<p><strong>Skynova</strong> project is a platform that helps you remotely connect and operate your fleet of drones anywhere you want. Our System allows you to view data and communicate with drone base, drones, docking stations in one easy to understand dashboard. </p>
-							
-						</div>
-						<div class="col-4 col-12-medium">
-							<h2>Why did we create this project?</h2>
-							<p>We aim to utilize this project to enhance the operational efficiency of police officers, firefighters, and other essential services in their day-to-day activities. Through this website, public services can now operate with greater ease and efficiency compared to previous methods. The streamlined handling and operation of drones contribute to an overall improvement, ensuring enhanced safety for individuals. </p>
-						</div>
-						<div class="col-4 col-12-medium">
-							<h2>Uses for project skynova</h2>
-							<p>
-								<strong>Skynova</strong> serves as a cutting-edge drone home base, providing seamless charging and maintenance for unmanned aerial vehicles. With automated docking capabilities and real-time monitoring, it revolutionizes drone operations for tasks ranging from surveillance to delivery services. </p>
-						</div>
-						<div class="col-4 col-12-medium">
-							<h2>Our solution against others</h2>
-							<p>
-								Our  project stands out against other drone home base solutions by offering unparalleled efficiency through advanced automation in docking, charging, and maintenance processes. Unlike competitors, our system boasts real-time monitoring capabilities, ensuring optimal drone performance and reducing downtime. With a user-friendly interface and superior technology integration, <strong>Skynova</strong> leads the way in revolutionizing the drone ecosystem.</p>
-						</div>
-					</div>
-				</section>
+		<section id="one" class="spotlight style2 bottom">		
+			<span class="image fit main"><img src="{{ url_for('static', filename='images/SolarField.png') }}" alt="photo1"></span>
+		</section>
 
-			<!-- Footer -->
-				<footer id="footer">
-					<ul class="copyright">
-						<li>&copy; SkyNova. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-					</ul>
-				</footer>
-		</div>
+
+		<section id="two" class="spotlight style2 bottom slideImage">		
+			<span class="image fit main" ><img  src="{{ url_for('static', filename='images/1.png') }}" alt="photo1"></span>
+		</section>
+
+
+		<div class="underImages"><a href="">Odnośnik do czegoś</a></div>
+		
+		<section id="three" class="spotlight style2 bottom">		
+			<span class="image fit main"><img src="{{ url_for('static', filename='images/5v2.jpg') }}" alt="photo1"></span>
+		</section>
+		<section id="four" class="spotlight style2 bottom">		
+			<span class="image fit main"><img src="{{ url_for('static', filename='images/3.png') }}" alt="photo1"></span>
+		</section>
+		
+		
 
 		<!-- Scripts -->
 		<script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
@@ -103,5 +81,22 @@
 		<script src="{{ url_for('static', filename='js/main.js') }}"></script>
 		<script src="{{ url_for('static', filename='js/cookies.js') }}"></script>
 
+		<script>
+			const boxElement = document.querySelector('.slideImage');
+			let timeoutId;
+	
+
+			boxElement.addEventListener('mouseenter', () => {
+				clearTimeout(timeoutId); 
+				boxElement.style.transform = 'translateX(-20%)'; 
+				boxElement.style.backgroundColor = 'pink'; 
+			});
+			boxElement.addEventListener('mouseleave', () => {
+				timeoutId = setTimeout(() => {
+					boxElement.style.transform = 'translateX(0)'; 
+					boxElement.style.backgroundColor = 'skyblue'; 
+				}, 1250);
+			});
+		</script>
 	</body>
 </html>

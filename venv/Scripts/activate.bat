@@ -8,7 +8,7 @@ if defined _OLD_CODEPAGE (
     "%SystemRoot%\System32\chcp.com" 65001 > nul
 )
 
-set VIRTUAL_ENV=C:\Users\STUDENT-2\Desktop\SkyNova\venv
+set VIRTUAL_ENV=C:\Users\STUDENT\Desktop\New folder (7)\SkyNova_V5-master\SkyNova_V5-master\venv
 
 if not defined PROMPT set PROMPT=$P$G
 
